@@ -6,8 +6,10 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
-
-
+/** CSS Variable **/
+:root {
+    --primary-color: #34D399;
+}
 
 /** container **/
 
@@ -18,4 +20,27 @@ body{
 .container-center {
     max-width: 600px;
     margin: auto;
+}
+
+/** links **/
+
+.links {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    border: 2px;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border-style: outset;
+    color:white;
+}
+
+.link-secondary {
+    border: 2px;
+    border-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border-style: outset;
+    color: var(--primary-color);
 }
