@@ -44,3 +44,8 @@ body{
     border-style: outset;
     color: var(--primary-color);
 }
+
+hr {
+    margin: 2rem 0rem
+}
+
