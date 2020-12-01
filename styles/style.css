@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
 }
 
@@ -10,7 +10,7 @@ body{
 :root {
     --primary-color: #34D399;
     --dark-grey: #6B7280;
-    --off-white:#E5E7EB;
+    --off-white: #E5E7EB;
 }
 
 /** container **/
@@ -36,7 +36,7 @@ body{
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     border-style: outset;
-    color:white;
+    color: white;
 }
 
 .link-secondary {
@@ -75,6 +75,7 @@ hr {
 .navigation .nav-pills {
     text-align: right;
 }
+
 .navigation .links {
     color: white
 }
@@ -97,7 +98,8 @@ hr {
 
 .hero .hero-img {
     max-width: 350px;
-    display: block; /*makes the image into a block element from an inline element */
+    display: block;
+    /*makes the image into a block element from an inline element */
     margin: auto;
 }
 
@@ -105,4 +107,20 @@ hr {
     color: var(--dark-grey);
     text-align: center;
     padding-top: 1rem;
+}
+
+
+/** section **/
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+    /* if we dont give this thinking that, "hey entire content of the section toh class="container-center" ki wajah se center me ho hi jayega then phir se text-align=center kyu dena?" then what will happen is, the heading of the section will be in the center only because of center container class but it will be left aligned which will not look good. */
+}
+
+.ow {
+    background-color: var(--off-white);
 }
