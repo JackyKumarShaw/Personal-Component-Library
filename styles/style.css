@@ -124,3 +124,28 @@ hr {
 .ow {
     background-color: var(--off-white);
 }
+
+/* footer */
+
+.footer {
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .links {
+    color: white
+}
+
+.footer .footer-header {
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+/* the following styling is done to override the default user agent stylesheet that the browser automatically applis to shift the unordered list a little bit(40px) towards the right so that it gets a proper indented look and feel. But the bowser never knows that we are converting our unordered list into inline, so as a result the total inline list gets shifted 40px towards the right making us pull our hairs thinking "Even after giving text-align:center" in footer class, why this inline list is not coming exactly in the center?? Thus we are overriding the default inline-start padding to 0px */
+.footer ul {
+    padding-inline-start: 0px;
+}
